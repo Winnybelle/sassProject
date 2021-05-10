@@ -1,0 +1,245 @@
+.navbar_logo, .navbar_menu, .navbar_menu_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  background-color: #f7f7f7;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: relative;
+}
+
+.navbar_logo {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.5rem;
+  margin-left: 24px;
+}
+
+.navbar_bar {
+  opacity: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar_bar {
+    color: #000;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+
+.navbar_menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar_menu {
+    display: none;
+  }
+}
+
+.navbar_menu_links {
+  color: #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+}
+
+.navbar_menu_links:hover {
+  color: #dc145abe;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar_menu #btn {
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #dc143c;
+  margin-left: 16px;
+}
+
+.navbar_menu #btn .btn_text {
+  color: #fff;
+}
+
+.navbar_menu #btn:hover {
+  background-color: #dc145abe;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'kumbh', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.hero {
+  background-color: #f7f7f7;
+}
+
+.hero_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  .hero_container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.hero_container_left {
+  width: 100%;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 700px) {
+  .hero_container_left {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .hero_container_left {
+    line-height: 1.5;
+  }
+}
+
+.hero_container_left h1 {
+  font-size: 3rem;
+  color: #dc143c;
+  padding: 10px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+  .hero_container_left h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .hero_container_left h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+}
+
+.hero_container .p_one {
+  font-size: 15px;
+  color: #000;
+}
+
+@media screen and (max-width: 200px) {
+  .hero_container .p_one {
+    font-size: 1.5rem;
+  }
+}
+
+.hero_container .p_two {
+  font-size: 2rem;
+  color: #000;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 200px) {
+  .hero_container .p_two {
+    font-size: 1.3rem;
+  }
+}
+
+.hero_container_btn {
+  font-size: 1rem;
+  background-color: #dc143c;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #f7f7f7;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hero_container #btn2 {
+  position: relative;
+  z-index: 2;
+  color: #f7f7f7;
+}
+
+.hero_container_btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: red;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.hero_container_btn:hover::after {
+  width: 100%;
+}
+
+.hero_container_right {
+  text-align: center;
+}
+
+.hero_container_img {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
